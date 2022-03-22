@@ -17,6 +17,10 @@ env:
   - MOCHA=mocha@3
   - MOCHA=mocha@4
   - MOCHA=mocha@5
+  - MOCHA=mocha@6
+  - MOCHA=mocha@7
+  - MOCHA=mocha@8
+  - MOCHA=mocha@9
 
 node_js:
   - "0.10"
@@ -28,6 +32,14 @@ matrix:
   - env: MOCHA=mocha@4
     node_js: "0.10"
   - env: MOCHA=mocha@5
+    node_js: "0.10"
+  - env: MOCHA=mocha@6
+    node_js: "0.10"
+  - env: MOCHA=mocha@7
+    node_js: "0.10"
+  - env: MOCHA=mocha@8
+    node_js: "0.10"
+  - env: MOCHA=mocha@9
     node_js: "0.10"
 
 after_script: "npm install coveralls@2 && cat ./coverage/lcov.info | coveralls"
